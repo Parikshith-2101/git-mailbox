@@ -28,15 +28,19 @@ body{
 .jfc-ctr{
     justify-content:center;
 }
+ 
+.txt-dec-none{
+    text-decoration:none;
+}
 
 .left_sidebar{
     background:#eaf1fb;
-    height:95vh;
-    width:5vw;
+    height:1580px;
+    width:68px;
 }
 
 .l_side{
-    width:5vw;
+    width:68px;
     padding-block:8px;
     justify-content:center;
     background:#eaf1fb;
@@ -98,7 +102,7 @@ header{
 }
 
 .gmail_logo{
-    padding-inline:1.5vw;
+    padding-inline:22px;
 }
 
 .search_box{
@@ -122,7 +126,7 @@ header{
 }
 
 .SearchBar{
-    padding:12px 17px;
+    padding:6px 17px;
     border-radius:30px;
     background:#eaf1fb;
 }
@@ -130,7 +134,13 @@ header{
 .SearchWidth{
     width:36vw;
     background:#eaf1fb;
-    border-color:#eaf1fb;
+    border:none;
+}
+
+.SearchWidth:focus{
+    outline:none;
+    background:white;
+    box-shadow:
 }
 
 .active_btn{
@@ -138,6 +148,7 @@ header{
     border-radius:30px;
     justify-content:space-around;
     background:#eaf1fb;
+    text-decoration:none;
 }
 
 .nav_icon{
@@ -146,5 +157,111 @@ header{
 }
 
 .search_icon{
-    padding-right:6px;
+    border-radius:30px;
+    padding:8px;
+}
+
+.search_icon:hover{
+    background:rgba(60, 64, 67, .1);
+}
+
+.main_left_element{
+    display:flex;
+    align-items:center;
+    padding: 8px;
+    border-radius: 30px;
+    width: 220px;
+    
+}
+
+.main_left_icon{
+    width:20px;
+    margin-right:10px;
+    display:flex;
+    justify-content:center;
+}
+
+
+
+.main_left_name{
+    font-size:14px;
+    color: rgb(32, 33, 36);
+}
+
+.main_leftbar{
+    padding-inline:15px;
+    background:#f5f5f5;
+}
+
+.labels{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+    padding:10px;
+}
+
+.compose_btn{
+    border-radius:13px;
+    padding:14px;
+    background:#c2e7ff;
+}
+
+.compose_btn:hover{
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, .3), 0 4px 8px 3px rgba(60, 64, 67, .15);
+    background-color: #c2e7ff;
+}
+
+.compose_icon{
+    padding-right:10px;
+}
+
+.compose_name{
+    color: #001d35;
+    font-weight:500;
+    font-size:14px;
+}
+
+.compose{
+    width:125px;
+    margin-bottom:16px;
+    margin-top:8px;
+}
+
+.inbox{
+    color: #001d35;
+    font-weight:bold;
+}
+
+.inbox_title{
+    background:#d3e3fd;
+}
+
+.content_head_icon{
+    color:#444746;
+}
+
+#refresh,#dots,#box{
+    padding-inline:10px;
+}
+
+
+@media only screen and (max-width: 960px){
+    .md_d-none{
+	display:none;
+    }
+    .active_btn{
+	justify-content:center;
+    }
+    .green_dot{
+	padding-right:5px;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .sd_d-none{
+ 	display:none;
+    }
+    .search_box{
+        justify-content:end;
+    }
 }
