@@ -1,171 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Inbox</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" tyle="image/x-icon" href="assets/gmail_icon.webp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inbox</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" tyle="image/x-icon" href="assets/gmail_icon.webp">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-	<header>
-	    <div class="navbar d-flex">	
-		
-		<div class="d-flex nav_sect_1">
-		    <div class="nav_item l_side d-flex">
-		    	<a href="" class="d-flex fl-col jfc-ctr menu">
-			    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-  			    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-		     	    </svg>
-		   	</a>
-		    </div>
-		    <div class="nav_item d-flex ali-ctr">
-		   	<a href="" class="d-flex gmail_logo">
-			    <img src="assets/gmail_logo.png" width="109" alt="gmail-logo">
-		   	</a>
-		    </div>
-		</div>
-		<div class="d-flex">
-		    <div class="search_box d-flex ali-ctr">
-		    	<div class="SearchBar d-flex ali-ctr">
-			    <div class="search_icon"><a href="" class="d-flex"><img src="assets/search_icon.webp" width="20" alt="search"></a></div>
-		    	    <div class="sd_d-none"><input type="text" placeholder="Search mail" class="SearchWidth"></div>
-		    	    <div class="sd_d-none search_icon"><a href="" class="d-flex"><img src="assets/toggle_icon.png" width="20" alt="toggle" ></a></div>
+        <header>
+            <div class="nav d-flex">
+                <div class="navbar d-flex">
+                    <div class="d-flex nav_sect_1">
+                        <div class="nav_item l_side d-flex">
+                            <a href="" class="d-flex fl-col jfc-ctr menu">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="nav_item d-flex ali-ctr mbl_d-none">
+                            <a href="" class="d-flex gmail_logo">
+                            <img src="assets/gmail_logo.png" width="109" alt="gmail-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="search_box d-flex ali-ctr">
+                            <div class="SearchBar d-flex ali-ctr">
+                                <div class="search_icon mbl_d-none"><a href="" class="d-flex"><img src="assets/search_icon.webp" width="20" alt="search"></a></div>
+                                <div class="sd_d-none mbl_d-block"><input type="text" placeholder="Search mail" class="SearchWidth"></div>
+                                <div class="sd_d-none search_icon mbl_d-none"><a href="" class="d-flex"><img src="assets/toggle_icon.png" width="20" alt="toggle" ></a></div>
+                            </div>
+                        </div>
+                        <div class="d-flex ali-ctr mbl_d-none">
+                            <div class="d-flex ali-ctr active_btn">
+                                <a href="" class="d-flex ali-ctr active_btn">
+                                    <span class="green_dot">&#x2022;</span>
+                                    <p class="nav_p md_d-none">Active</p>
+                                    <img src="assets/arrow_down.png" width="10" height="10" alt="arrow">
+                                </a>
+                            </div>
+                            <div>
+                                <a href=""><img src="assets/help_icon.png" alt="help" class="nav_icon"></a>
+                            </div>
+                            <div>
+                                <a href=""><img src="assets/settings_icon.png" alt="settings" class="nav_icon"></a>
+                            </div>
+                        </div>
+                        <div class="d-flex ali-ctr">
+                            <div class="mbl_d-none"><a href=""><img src="assets/grid_icon.png" alt="settings" class="nav_icon"></a></div>
+                            <div class="mbl_d-none"><a href=""><img src="assets/mail_profile.png" width="134" alt="profile"></a></div>
+                            
+                        </div>
+                    </div>
+		    <div class="letter_p d-flex ali-ctr"><a href=""><img src="assets/letter_p.png" alt="p" class="p mbl_d-block"></a></div>
+                </div>
+            </div>
+        </header>
+        <div class="container d-flex">
+            <div class="left_sidebar">
+                <div class="d-flex fl-col left_container">
+                    <div class="ls_element mail">
+                        <a href"">
+                            <div class="ls_img"><img src="assets/mail_icon.png" alt="mail_icon" class="ls_icon"></div>
+                            <div class="ls_name mbl_d-none">
+                                <p>Mail</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ls_element chat">
+                        <a href"">
+                            <div class="ls_img"><img src="assets/chat_icon.png" alt="chat" class="ls_icon"></div>
+                            <div class="ls_name mbl_d-none">
+                                <p>Chat</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ls_element meet">
+                        <a href"">
+                            <div class="ls_img"><img src="assets/meet_icon.png" alt="meet" class="ls_icon"></div>
+                            <div class="ls_name mbl_d-none">
+                                <p>Meet</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main_container d-flex">
+                <div class="main_leftbar d-flex fl-col">
+                    <div class="compose">
+                        <div class="compose_btn">
+                            <a href="" class="d-flex ali-ctr txt-dec-none">
+                                <img src="assets/pencil.png" alt="pen" width="24" class="compose_icon">
+                                <p class="compose_name">Compose</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_left d-flex fl-col mbl_d-none">
+                        <div class="main_left_element inbox_title">
+                            <img src="assets/inbox_icon.png" alt="inbox" class="main_left_icon">
+                            <p class="main_left_name inbox">Inbox</p>
+                        </div>
+                        <div class="main_left_element">
+                            <img src="assets/star_icon.png" alt="starred" class="main_left_icon">
+                            <p class="main_left_name">Starred</p>
+                        </div>
+                        <div class="main_left_element">
+                            <img src="assets/clock_icon.png" alt="snooze" class="main_left_icon">
+                            <p class="main_left_name">Snoozed</p>
+                        </div>
+                        <div class="main_left_element">
+                            <img src="assets/sent_icon.png" alt="sent" class="main_left_icon">
+                            <p class="main_left_name">Sent</p>
+                        </div>
+                        <div class="main_left_element">
+                            <img src="assets/draft_icon.png" alt="draft" class="main_left_icon">
+                            <p class="main_left_name">Drafts</p>
+                        </div>
+                        <div class="main_left_element">
+                            <div class="main_left_icon"><img src="assets/arrow_down.png" alt="more" class="arrow" width="12" height="12"></div>
+                            <p class="main_left_name">More</p>
+                        </div>
+                    </div>
+                    <div class="labels mbl_d-none">
+                        <p class="label_name">Labels</p>
+                        <p class="label_name">+</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content_header mbl_d-none">
+                        <div class="header_left d-flex">
+                            <div id="box">
+                                <i class="fa-regular fa-square content_head_icon pd-10"></i>
+                                <i class="fa-solid fa-sort-down content_head_icon pos-rel"></i>
+                            </div>
+                            <div id="refresh">
+                                <i class="fa-solid fa-rotate-right content_head_icon"></i>
+                            </div>
+                            <div id="dots">
+                                <i class="fa-solid fa-ellipsis-vertical content_head_icon"></i>
+                            </div>
+                        </div>
+                        <div class="header_right">
+                            <div>
+                                <p>1-43 of 43</p>
+                            </div>
+                            <div class="direction">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mail_container">
+                        <div class="mail_tab">
+			    <div class="mail_content d-flex">
+                                <div class="icon_div d-flex">
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                            	</div>
+                            	<div class="mail_from">
+                                    <p class="mail_title">Techversant infotec.</p>
+                            	</div>
+                            	<div class="mail_msg_cont d-flex">
+                                    <p class="mail_title">Daily Email Digest</p>
+                                    <p class="mail_msg"> - Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today </p>
+                            	</div>
+				<div class="time_tab">
+				    <p class="time">9:28 AM</p>
+				</div>
+                            </div>
 			</div>
+			<div class="mail_tab">
+			    <div class="mail_content d-flex">
+                                <div class="icon_div d-flex">
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                            	</div>
+                            	<div class="mail_from">
+                                    <p class="mail_title">Techversant infotec.</p>
+                            	</div>
+                            	<div class="mail_msg_cont d-flex">
+                                    <p class="mail_title">Daily Email Digest</p>
+                                    <p class="mail_msg"> - Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today </p>
+                            	</div>
+				<div class="time_tab">
+				    <p class="time">9:28 AM</p>
+				</div>
+                            </div>
+			</div>
+			<div class="mail_tab">
+			    <div class="mail_content d-flex">
+                                <div class="icon_div d-flex">
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                            	</div>
+                            	<div class="mail_from">
+                                    <p class="mail_title">Techversant infotec.</p>
+                            	</div>
+                            	<div class="mail_msg_cont d-flex">
+                                    <p class="mail_title">Daily Email Digest</p>
+                                    <p class="mail_msg"> - Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today </p>
+                            	</div>
+				<div class="time_tab">
+				    <p class="time">9:28 AM</p>
+				</div>
+                            </div>
+			</div>
+			<div class="mail_tab">
+			    <div class="mail_content d-flex">
+                                <div class="icon_div d-flex">
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                            	</div>
+                            	<div class="mail_from">
+                                    <p class="mail_title">Techversant infotec.</p>
+                            	</div>
+                            	<div class="mail_msg_cont d-flex">
+                                    <p class="mail_title">Daily Email Digest</p>
+                                    <p class="mail_msg"> - Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today </p>
+                            	</div>
+				<div class="time_tab">
+				    <p class="time">9:28 AM</p>
+				</div>
+                            </div>
+				
+			</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_sidebar mbl_d-none">
+                <div class="right_side_content">
+                    <div class="right_top d-flex fl-col">
+			<img src="assets/calendar_icon.png" alt="calendr" class="right_icon">
+			<img src="assets/keep_icon.png" alt="keep" class="right_icon">
+			<img src="assets/task_icon.png" alt="tick" class="right_icon">
+			<img src="assets/contact_icon.png" alt="contact" class="right_icon">
 		    </div>
-		
-	 	    <div class="d-flex ali-ctr">
-			<div class="d-flex ali-ctr active_btn">
-			    <a href="" class="d-flex ali-ctr active_btn">
-			    <span class="green_dot">&#x2022;</span>
-			    <p class="nav_p md_d-none">Active</p>
-			    <img src="assets/arrow_down.png" width="10" height="10" alt="arrow">
-			    </a>
-			</div>
- 
-			<div>
-			    <a href=""><img src="assets/help_icon.png" alt="help" class="nav_icon"></a>
-			</div>
+		    <div class="right_bottom">
 
-			<div>
-			    <a href=""><img src="assets/settings_icon.png" alt="settings" class="nav_icon"></a>
-			</div>
 		    </div>
-
-		    <div class="d-flex ali-ctr">
-			<div><a href=""><img src="assets/grid_icon.png" alt="settings" class="nav_icon"></a></div>
-			<div><a href=""><img src="assets/mail_profile.png" width="134" alt="profile"></a></div>
-		    </div>
-	 	</div>
-	    </div>
-	</header>
-
-      	<div class="container d-flex">
-	    <div class="left_sidebar">
-	    	<div class="d-flex fl-col">
-		    <div class="ls_element mail">
-			<a href"">
-			    <div class="ls_img"><img src="assets/mail_icon.png" alt="mail_icon" class="ls_icon"></div>
-			    <div class="ls_name"><p>Mail</p></div>
-			</a>
-		    </div>
-		    <div class="ls_element chat">
-			<a href"">
-			    <div class="ls_img"><img src="assets/chat_icon.png" alt="chat" class="ls_icon"></div>
-			    <div class="ls_name"><p>Chat</p></div>
-			</a>
-		    </div>
-		    <div class="ls_element meet">
-			<a href"">
-			    <div class="ls_img"><img src="assets/meet_icon.png" alt="meet" class="ls_icon"></div>
-			    <div class="ls_name"><p>Meet</p></div>
-			</a>
-		    </div>
-		</div>
-	    </div>
-	    <div class="main_container d-flex">
-	   	
-		<div class="main_leftbar d-flex fl-col">
-		    <div class="compose">
-			<div class="compose_btn">
-			    <a href="" class="d-flex ali-ctr txt-dec-none">
-			    <img src="assets/pencil.png" alt="pen" width="24" class="compose_icon">
-			    <p class="compose_name">Compose</p>
-			    </a>
-			</div>
-		    </div>
-		    <div class="main_left d-flex fl-col">
-			<div class="main_left_element inbox_title">
-			    <img src="assets/inbox_icon.png" alt="inbox" class="main_left_icon"><p class="main_left_name inbox">Inbox</p>
-			</div>
-			<div class="main_left_element">
-			    <img src="assets/star_icon.png" alt="starred" class="main_left_icon"><p class="main_left_name">Starred</p>
-			</div>
-			<div class="main_left_element">
-			    <img src="assets/clock_icon.png" alt="snooze" class="main_left_icon"><p class="main_left_name">Snoozed</p>
-			</div>
-			<div class="main_left_element">
-			    <img src="assets/sent_icon.png" alt="sent" class="main_left_icon"><p class="main_left_name">Sent</p>
-			</div>
-			<div class="main_left_element">
-			    <img src="assets/draft_icon.png" alt="draft" class="main_left_icon"><p class="main_left_name">Drafts</p>
-			</div>
-			<div class="main_left_element">
-			    <div class="main_left_icon"><img src="assets/arrow_down.png" alt="more" class="arrow" width="12" height="12"></div><p class="main_left_name">More</p>
-			</div>
-		    </div>
-		    <div class="labels">
-			<p class="label_name">Labels</p>
-			<p class="label_name">+</p>
-		    </div>
-		</div>
-
-		<div class="content">
-		    
-		    <div class="content_header">
-			<div class="header_left d-flex">
-			    <div id="box" class="d-flex ali-ctr">
-          			<i class="fa-regular fa-square content_head_icon"></i>
-				<i class="fa-solid fa-sort-down content_head_icon"></i>
-			    </div>
-			    <div id="refresh">
-				<i class="fa-solid fa-rotate-right content_head_icon"></i>
-			    </div>
-			    <div id="dots">
-				<i class="fa-solid fa-ellipsis-vertical content_head_icon"></i>
-			    </div>
-			</div>
-			<div class="header_right">
-			    <div><p>1-43 of 43</p></div>
-			    <div class="direction">
-				<i class="fa-solid fa-chevron-left"></i>
-				<i class="fa-solid fa-chevron-right"></i>
-		 	    </div>
-			</div>
-		    </div>
-		    <div class="main_header2 d-flex">
-			<div class="primary">
-			
-			</div>
-			<div class="promotions">
-			
-			</div>
-			<div class="social">
-
-			</div>
-		    </div>
-		    <div class="mail_container">
-			<div class="mail_content"></div>
-		    </div>
-		</div>
-
-
-	    </div>
-	    <div class="right_sidebar">
-	    	<div class="">
-		    <di
-		</div>
-	    </div>
-    	</div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
