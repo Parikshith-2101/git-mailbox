@@ -7,7 +7,9 @@
 
 body{
     font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-    width:fit-content;
+    width:100%;
+    border:1px solid;
+
 }
 
 .d-flex{
@@ -38,10 +40,15 @@ body{
     width:100%;
 }
 
+.left_container{
+    width:100%;
+ 
+}
+
 .left_sidebar{
     background:#eaf1fb;
     height:1580px;
-    width:68px;
+    width:5%;
 }
 
 .l_side{
@@ -68,7 +75,7 @@ body{
     text-align:center;
 }
 
-.mail,.chat,.meet{
+.mail{
     margin-top:10px;
 }
 
@@ -85,7 +92,12 @@ body{
     display:flex;
     justify-content:center;
     padding:6px;
+    padding-inline:10px;
     border-radius:30px;
+}
+
+.ls_img_main{
+    background:#d3e3fd;
 }
 
 .ls_img:hover{
@@ -97,14 +109,18 @@ body{
     flex-direction:column;
     align-items:center;
     font-size:12px;
-    padding:6px;
+    
+    width:100%;
 }
 
 
 
 header{
     background:#f5f5f5;
-    width:fit-content;
+    width:100%;
+    border:1px solid;
+    
+
 }
 
 .gmail_logo{
@@ -113,11 +129,11 @@ header{
 
 .search_box{
     margin-left:50px;
-    width:45vw;
+    width:43%;
 }
 
 .nav_sect_1{
-    min-width:238px;
+    width:19%;
     padding-right:40px;
 }
 
@@ -140,22 +156,34 @@ header{
     display:none;
 }
 
+.mg-rt-10{
+    margin-right:100px;
+}
+
+.bar{
+    width:76%;
+}
 
 .SearchBar{
     padding:6px 17px;
     border-radius:30px;
     background:#eaf1fb;
+    width:87%
+}
+
+.input_search{
+    width:70%;
 }
 
 .SearchWidth{
-    width:35vw;
+    width:100%;
     background:#eaf1fb;
     border:none;
 }
 
 .SearchWidth:focus{
     outline:none;
-    background:white;
+    
     box-shadow:
 }
 
@@ -186,7 +214,7 @@ header{
     align-items:center;
     padding: 8px;
     border-radius: 30px;
-    width: 220px;
+    width: 94%;
     
 }
 
@@ -285,7 +313,27 @@ header{
 }
 
 .direction{
-    margin-left:30px;
+    margin-left:24px;
+    display:flex;
+    justify-content:space-between;
+    width:65%;
+}
+
+.main_container{
+    width:85%;
+}
+
+.header_right{
+    color:#5f6368;
+}
+  
+.head_right_num{
+    display:flex;
+    width:119px;
+}
+
+.head_right_num>p{
+    font-size:12px;
 }
 
 .mail_content_icon,.mail_content_icon2{
@@ -308,8 +356,8 @@ header{
     overflow-x:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
-    min-width:12vw;
-    width:33vw;
+    
+    width:40vw;
 }
 
 .mail_content_icon{
@@ -349,11 +397,12 @@ header{
 
 .right_icon{
     width:22px;
-    margin-block:15px;
+    margin:15px;
 }
 
 .right_sidebar{
-    width:100%;
+    width:10%;
+    background:#f5f5f5;
 }
 
 .right_side_content{
@@ -382,9 +431,14 @@ header{
     .search_box{
         justify-content:end;
     }
+    .SearchBar{
+	justify-content:end;
+  	margin-left:70%;
+    }
+
 }
 
-@media only screen and (max-width:425px){
+@media only screen and (max-width:600px){
     .mbl_d-none{
 	display:none;
     }
@@ -406,14 +460,17 @@ header{
     .navbar{
     	border-radius:30px;
 	background:#eaf1fb;
+  	justify-content:space-around;
     }
    
-    .header{
+    header{
  	background:white;
+	display:contents;
     }
 
     .nav{
-	width:700px;
+	width:100%;
+       	border-radius:25px;
     }
 
     .SearchBar{
@@ -423,6 +480,7 @@ header{
     .left_container{
 	flex-direction:row;
    	justify-content:space-around;
+       	width:100%;
     }
 
     .container{
@@ -431,9 +489,44 @@ header{
 
     .left_sidebar{
 	width:100%;
-      	height:20vh;
+      	height:15vh;
     	position:fixed;
 	bottom:0;
+    }
+
+    header{
+	background:white;
+      	display:contents;
+    }
+
+    .main_container{
+	flex-direction:column-reverse;
+    }
+
+    .compose_btn{
+	position:fixed;
+	bottom:105px;
+	right:0;
+    }
+
+    .SearchWidth{
+	font-size:19px;
+    }
+
+    body{
+	width:fit-content;
+    }
+
+    .mg-rt-10{
+	margin-right:0px;
+    }
+
+    .mail{
+	margin-top:0px;
+    }
+
+    .l_side{
+	border-radius:30px;
     }
 
 }
