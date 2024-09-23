@@ -15,22 +15,22 @@
                         <div class="nav_item l_side d-flex">
                             <a href="" class="d-flex fl-col jfc-ctr menu">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                                 </svg>
                             </a>
                         </div>
-                        <div class="nav_item d-flex ali-ctr mbl_d-none">
+                        <div class="nav_item ali-ctr mbl_d-none">
                             <a href="" class="d-flex gmail_logo">
                             <img src="assets/gmail_logo.png" width="109" alt="gmail-logo">
                             </a>
                         </div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex bar">
                         <div class="search_box d-flex ali-ctr">
                             <div class="SearchBar d-flex ali-ctr">
                                 <div class="search_icon mbl_d-none"><a href="" class="d-flex"><img src="assets/search_icon.webp" width="20" alt="search"></a></div>
-                                <div class="sd_d-none mbl_d-block"><input type="text" placeholder="Search mail" class="SearchWidth"></div>
-                                <div class="sd_d-none search_icon mbl_d-none"><a href="" class="d-flex"><img src="assets/toggle_icon.png" width="20" alt="toggle" ></a></div>
+                                <div class="ld_d-none mbl_d-block input_search"><input type="text" placeholder="Search mail" class="SearchWidth"></div>
+                                <div class="ld_d-none search_icon mbl_d-none"><a href="" class="d-flex"><img src="assets/toggle_icon.png" width="20" alt="toggle" ></a></div>
                             </div>
                         </div>
                         <div class="d-flex ali-ctr mbl_d-none">
@@ -41,20 +41,19 @@
                                     <img src="assets/arrow_down.png" width="10" height="10" alt="arrow">
                                 </a>
                             </div>
-                            <div>
+                            <div class="navHov">
                                 <a href=""><img src="assets/help_icon.png" alt="help" class="nav_icon"></a>
                             </div>
-                            <div>
+                            <div class="navHov">
                                 <a href=""><img src="assets/settings_icon.png" alt="settings" class="nav_icon"></a>
                             </div>
                         </div>
                         <div class="d-flex ali-ctr">
-                            <div class="mbl_d-none"><a href=""><img src="assets/grid_icon.png" alt="settings" class="nav_icon"></a></div>
-                            <div class="mbl_d-none"><a href=""><img src="assets/mail_profile.png" width="134" alt="profile"></a></div>
-                            
+                            <div class="mbl_d-none navHov"><a href=""><img src="assets/grid_icon.png" alt="settings" class="nav_icon"></a></div>
+                            <div class="mbl_d-none p_tech navHov"><a href=""><img src="assets/mail_profile.png" width="134" alt="profile"></a></div>
                         </div>
                     </div>
-		    <div class="letter_p d-flex ali-ctr"><a href=""><img src="assets/letter_p.png" alt="p" class="p mbl_d-block"></a></div>
+                    <div class="letter_p d-flex ali-ctr"><a href=""><img src="assets/letter_p.png" alt="p" class="p mbl_d-block"></a></div>
                 </div>
             </div>
         </header>
@@ -69,7 +68,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="ls_element chat">
+                    <div class="ls_element chat mbl_d-none">
                         <a href"">
                             <div class="ls_img"><img src="assets/chat_icon.png" alt="chat" class="ls_icon"></div>
                             <div class="ls_name mbl_d-none">
@@ -125,122 +124,639 @@
                     </div>
                     <div class="labels mbl_d-none">
                         <p class="label_name">Labels</p>
-                        <p class="label_name">+</p>
+                        <p class="label_name label_icon">+</p>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content_header mbl_d-none">
-                        <div class="header_left d-flex">
-                            <div id="box">
-                                <i class="fa-regular fa-square content_head_icon pd-10"></i>
-                                <i class="fa-solid fa-sort-down content_head_icon pos-rel"></i>
+                <div class="content-bg">
+                    <div class="content">
+                        <div class="content_header mbl_d-none">
+                            <div class="header_left d-flex">
+                                <div id="box">
+                                    <i class="fa-regular fa-square content_head_icon pd-10"></i>
+                                    <i class="fa-solid fa-sort-down content_head_icon pos-rel"></i>
+                                </div>
+                                <div id="refresh">
+                                    <i class="fa-solid fa-rotate-right content_head_icon"></i>
+                                </div>
+                                <div id="dots">
+                                    <i class="fa-solid fa-ellipsis-vertical content_head_icon"></i>
+                                </div>
                             </div>
-                            <div id="refresh">
-                                <i class="fa-solid fa-rotate-right content_head_icon"></i>
-                            </div>
-                            <div id="dots">
-                                <i class="fa-solid fa-ellipsis-vertical content_head_icon"></i>
+                            <div class="header_right">
+                                <div class="head_right_num">
+                                    <p>1-43 of 43</p>
+                                </div>
+                                <div class="direction">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="header_right">
-                            <div class="head_right_num">
-                                <p>1-43 of 43</p>
+                        <div class="mail_container">
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
                             </div>
-                            <div class="direction">
-                                <i class="fa-solid fa-chevron-left"></i>
-                                <i class="fa-solid fa-chevron-right"></i>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
                             </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+			    
+  			    <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+                            <div class="mail_tab d-flex">
+                                <div class="mail_icon_container d-flex">
+                                    <div class="avatar_icon"><img src="assets/avatar.webp" alt="avatar" class="avatar_img"></div>
+                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
+                                    <i class="fa-regular fa-star mail_content_icon2"></i>
+                                </div>
+                                <div class="mail_content d-flex">
+                                    <span class="mail_title mail_from">Techversant infotec.</span>
+                                    <div class="mail_msg_cont d-flex">
+                                        <p><span class="mail_title">Daily Email Digest</span>
+                                            <span class="mail_msg"> <span class="ld_d-none">- </span>Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today (5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Saba(5) View all AK Aravind KV 19 Sep, 2024 - 19 Sep, 2024 SR Sabareesh RS 13 Sep, 2024 - 20 Sep, 2024 Work From Home today (12) View all AS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="time_tab">
+                                    <div class="hov_d-block">
+                                        <img src="assets/archive.png" alt="archive" class="hov_icon">
+                                        <img src="assets/delete.png" alt="delete" class="hov_icon">
+                                        <img src="assets/envelop.png" alt="envelop" class="hov_icon">
+                                        <img src="assets/clock.png" alt="clock" class="hov_icon">
+                                    </div>
+                                    <p class="time">9:28 AM</p>
+                                    <i class="fa-regular fa-star mail_content_icon2 d-none"></i>
+                                </div>
+                            </div>
+   			    
                         </div>
                     </div>
-                    
-                    <div class="mail_container">
-                        <div class="mail_tab">
-			    <div class="mail_content d-flex">
-                                <div class="icon_div d-flex">
-                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
-                                    <i class="fa-regular fa-star mail_content_icon2"></i>
-                            	</div>
-                            	<div class="mail_from">
-                                    <p class="mail_title">Techversant infotec.</p>
-                            	</div>
-                            	<div class="mail_msg_cont d-flex">
-                                    <p class="mail_title">Daily Email Digest</p>
-                                    <p class="mail_msg"> - Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today </p>
-                            	</div>
-				<div class="time_tab">
-				    <p class="time">9:28 AM</p>
-				</div>
-                            </div>
-			</div>
-			<div class="mail_tab">
-			    <div class="mail_content d-flex">
-                                <div class="icon_div d-flex">
-                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
-                                    <i class="fa-regular fa-star mail_content_icon2"></i>
-                            	</div>
-                            	<div class="mail_from">
-                                    <p class="mail_title">Techversant infotec.</p>
-                            	</div>
-                            	<div class="mail_msg_cont d-flex">
-                                    <p class="mail_title">Daily Email Digest</p>
-                                    <p class="mail_msg"> - Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today </p>
-                            	</div>
-				<div class="time_tab">
-				    <p class="time">9:28 AM</p>
-				</div>
-                            </div>
-			</div>
-			<div class="mail_tab">
-			    <div class="mail_content d-flex">
-                                <div class="icon_div d-flex">
-                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
-                                    <i class="fa-regular fa-star mail_content_icon2"></i>
-                            	</div>
-                            	<div class="mail_from">
-                                    <p class="mail_title">Techversant infotec.</p>
-                            	</div>
-                            	<div class="mail_msg_cont d-flex">
-                                    <p class="mail_title">Daily Email Digest</p>
-                                    <p class="mail_msg"> - Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today </p>
-                            	</div>
-				<div class="time_tab">
-				    <p class="time">9:28 AM</p>
-				</div>
-                            </div>
-			</div>
-			<div class="mail_tab">
-			    <div class="mail_content d-flex">
-                                <div class="icon_div d-flex">
-                                    <i class="fa-regular fa-square mail_content_icon  mbl_d-none"></i>
-                                    <i class="fa-regular fa-star mail_content_icon2"></i>
-                            	</div>
-                            	<div class="mail_from">
-                                    <p class="mail_title">Techversant infotec.</p>
-                            	</div>
-                            	<div class="mail_msg_cont d-flex">
-                                    <p class="mail_title">Daily Email Digest</p>
-                                    <p class="mail_msg"> - Daily Digest Thursday, 19 Sep Hello, Parikshith M On leave today </p>
-                            	</div>
-				<div class="time_tab">
-				    <p class="time">9:28 AM</p>
-				</div>
-                            </div>
-				
-			</div>
-                    </div>
-                </div>
-            </div>
-            <div class="right_sidebar mbl_d-none">
-                <div class="right_side_content">
-                    <div class="right_top d-flex fl-col">
-			<img src="assets/calendar_icon.png" alt="calendr" class="right_icon">
-			<img src="assets/keep_icon.png" alt="keep" class="right_icon">
-			<img src="assets/task_icon.png" alt="tick" class="right_icon">
-			<img src="assets/contact_icon.png" alt="contact" class="right_icon">
-		    </div>
-		    <div class="right_bottom">
-
-		    </div>
                 </div>
             </div>
         </div>
